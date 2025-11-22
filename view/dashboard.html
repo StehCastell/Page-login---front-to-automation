@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - QA Test Page</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Welcome to QA Stephanye Castellano's Test Page!</h1>
+            <p class="welcome-user">Hello, <span id="userName"></span>!</p>
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </header>
+
+        <main class="test-fields-container">
+            <h2>Test Fields - All HTML Input Types</h2>
+
+            <!-- Text Input -->
+            <section class="field-section">
+                <h3>1. Text Input (type="text")</h3>
+                <p class="field-description">Default input. Defines a single-line text field.</p>
+                <div class="form-group">
+                    <label for="textInput">Text Input</label>
+                    <input type="text" id="textInput" name="textInput" placeholder="Enter text here">
+                </div>
+            </section>
+
+            <!-- Password Input -->
+            <section class="field-section">
+                <h3>2. Password Input (type="password")</h3>
+                <p class="field-description">Defines a password field.</p>
+                <div class="form-group">
+                    <label for="passwordInput">Password Input</label>
+                    <input type="password" id="passwordInput" name="passwordInput" placeholder="Enter password">
+                </div>
+            </section>
+
+            <!-- Email Input -->
+            <section class="field-section">
+                <h3>3. Email Input (type="email")</h3>
+                <p class="field-description">Defines a field for entering an email address.</p>
+                <div class="form-group">
+                    <label for="emailInput">Email Input</label>
+                    <input type="email" id="emailInput" name="emailInput" placeholder="Enter email">
+                </div>
+            </section>
+
+            <!-- Number Input -->
+            <section class="field-section">
+                <h3>4. Number Input (type="number")</h3>
+                <p class="field-description">Defines a field for entering an integer number.</p>
+                <div class="form-group">
+                    <label for="numberInput">Number Input</label>
+                    <input type="number" id="numberInput" name="numberInput" placeholder="Enter a number" min="0" max="100">
+                </div>
+            </section>
+
+            <!-- Tel Input -->
+            <section class="field-section">
+                <h3>5. Tel Input (type="tel")</h3>
+                <p class="field-description">Defines a field for entering a phone number.</p>
+                <div class="form-group">
+                    <label for="telInput">Phone Input</label>
+                    <input type="tel" id="telInput" name="telInput" placeholder="(00) 00000-0000">
+                </div>
+            </section>
+
+            <!-- URL Input -->
+            <section class="field-section">
+                <h3>6. URL Input (type="url")</h3>
+                <p class="field-description">Defines a field for entering a URL.</p>
+                <div class="form-group">
+                    <label for="urlInput">URL Input</label>
+                    <input type="url" id="urlInput" name="urlInput" placeholder="https://example.com">
+                </div>
+            </section>
+
+            <!-- Search Input -->
+            <section class="field-section">
+                <h3>7. Search Input (type="search")</h3>
+                <p class="field-description">Defines a text field for entering a search string.</p>
+                <div class="form-group">
+                    <label for="searchInput">Search Input</label>
+                    <input type="search" id="searchInput" name="searchInput" placeholder="Search...">
+                </div>
+            </section>
+
+            <!-- Date Input -->
+            <section class="field-section">
+                <h3>8. Date Input (type="date")</h3>
+                <p class="field-description">Defines a control for selecting date (year, month, day - no time).</p>
+                <div class="form-group">
+                    <label for="dateInput">Date Input</label>
+                    <input type="date" id="dateInput" name="dateInput">
+                </div>
+            </section>
+
+            <!-- Time Input -->
+            <section class="field-section">
+                <h3>9. Time Input (type="time")</h3>
+                <p class="field-description">Defines a control for entering a time (no timezone).</p>
+                <div class="form-group">
+                    <label for="timeInput">Time Input</label>
+                    <input type="time" id="timeInput" name="timeInput">
+                </div>
+            </section>
+
+            <!-- Datetime-local Input -->
+            <section class="field-section">
+                <h3>10. Datetime-local Input (type="datetime-local")</h3>
+                <p class="field-description">Defines a control for selecting date and time (year, month, day, hour - no timezone).</p>
+                <div class="form-group">
+                    <label for="datetimeInput">Datetime-local Input</label>
+                    <input type="datetime-local" id="datetimeInput" name="datetimeInput">
+                </div>
+            </section>
+
+            <!-- Month Input -->
+            <section class="field-section">
+                <h3>11. Month Input (type="month")</h3>
+                <p class="field-description">Defines a control for selecting month and year (no timezone).</p>
+                <div class="form-group">
+                    <label for="monthInput">Month Input</label>
+                    <input type="month" id="monthInput" name="monthInput">
+                </div>
+            </section>
+
+            <!-- Week Input -->
+            <section class="field-section">
+                <h3>12. Week Input (type="week")</h3>
+                <p class="field-description">Defines a control for selecting week and year (no timezone).</p>
+                <div class="form-group">
+                    <label for="weekInput">Week Input</label>
+                    <input type="week" id="weekInput" name="weekInput">
+                </div>
+            </section>
+
+            <!-- Color Input -->
+            <section class="field-section">
+                <h3>13. Color Input (type="color")</h3>
+                <p class="field-description">Defines a hexadecimal color picker.</p>
+                <div class="form-group">
+                    <label for="colorInput">Color Input</label>
+                    <input type="color" id="colorInput" name="colorInput" value="#007bff">
+                </div>
+            </section>
+
+            <!-- Range Input -->
+            <section class="field-section">
+                <h3>14. Range Input (type="range")</h3>
+                <p class="field-description">Defines a range control (like a slider).</p>
+                <div class="form-group">
+                    <label for="rangeInput">Range Input</label>
+                    <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" value="50">
+                    <span id="rangeValue">50</span>
+                </div>
+            </section>
+
+            <!-- Checkbox Input -->
+            <section class="field-section">
+                <h3>15. Checkbox Input (type="checkbox")</h3>
+                <p class="field-description">Defines a checkbox for multiple option selection.</p>
+                <div class="form-group">
+                    <label>Checkbox Options</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="checkbox1" name="checkboxGroup" value="check1"> Option A</label>
+                        <label><input type="checkbox" id="checkbox2" name="checkboxGroup" value="check2"> Option B</label>
+                        <label><input type="checkbox" id="checkbox3" name="checkboxGroup" value="check3"> Option C</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Radio Input -->
+            <section class="field-section">
+                <h3>16. Radio Input (type="radio")</h3>
+                <p class="field-description">Defines a radio button for single selection.</p>
+                <div class="form-group">
+                    <label>Radio Options</label>
+                    <div class="radio-group">
+                        <label><input type="radio" id="radio1" name="radioGroup" value="radio1"> Choice 1</label>
+                        <label><input type="radio" id="radio2" name="radioGroup" value="radio2"> Choice 2</label>
+                        <label><input type="radio" id="radio3" name="radioGroup" value="radio3"> Choice 3</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- File Input -->
+            <section class="field-section">
+                <h3>17. File Input (type="file")</h3>
+                <p class="field-description">Defines a file select field and a "Browse" button (for file uploads).</p>
+                <div class="form-group">
+                    <label for="fileInput">Single File Upload</label>
+                    <input type="file" id="fileInput" name="fileInput">
+                </div>
+                <div class="form-group">
+                    <label for="multiFileInput">Multiple File Upload</label>
+                    <input type="file" id="multiFileInput" name="multiFileInput" multiple>
+                </div>
+            </section>
+
+            <!-- Hidden Input -->
+            <section class="field-section">
+                <h3>18. Hidden Input (type="hidden")</h3>
+                <p class="field-description">Defines a hidden field. (Not visible to users, but value can be inspected in DevTools)</p>
+                <div class="form-group">
+                    <label>Hidden Input (value: "hidden_secret_value")</label>
+                    <input type="hidden" id="hiddenInput" name="hiddenInput" value="hidden_secret_value">
+                    <p class="hint-text">This field is hidden. Check the page source or DevTools to see it.</p>
+                </div>
+            </section>
+
+            <!-- Button Input -->
+            <section class="field-section">
+                <h3>19. Button Input (type="button")</h3>
+                <p class="field-description">Defines a clickable button (mainly used with JavaScript to activate a script).</p>
+                <div class="form-group">
+                    <label for="buttonInput">Button Input</label>
+                    <input type="button" id="buttonInput" name="buttonInput" value="Click Me!" class="btn btn-primary">
+                </div>
+            </section>
+
+            <!-- Submit Input -->
+            <section class="field-section">
+                <h3>20. Submit Input (type="submit")</h3>
+                <p class="field-description">Defines a button to submit form data.</p>
+                <form id="submitForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="submitInput">Submit Input</label>
+                        <input type="submit" id="submitInput" name="submitInput" value="Submit Form" class="btn btn-success">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Reset Input -->
+            <section class="field-section">
+                <h3>21. Reset Input (type="reset")</h3>
+                <p class="field-description">Defines a button to reset form fields.</p>
+                <form id="resetForm">
+                    <div class="form-group">
+                        <label for="resetTestInput">Test Field (type something, then click Reset)</label>
+                        <input type="text" id="resetTestInput" name="resetTestInput" placeholder="Type something here...">
+                    </div>
+                    <div class="form-group">
+                        <label for="resetInput">Reset Input</label>
+                        <input type="reset" id="resetInput" name="resetInput" value="Reset Form" class="btn btn-warning">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Image Input -->
+            <section class="field-section">
+                <h3>22. Image Input (type="image")</h3>
+                <p class="field-description">Defines an image as the submit button.</p>
+                <form id="imageForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="imageInput">Image Input (Click the image to submit)</label>
+                        <input type="image" id="imageInput" name="imageInput" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40'%3E%3Crect width='120' height='40' fill='%23667eea' rx='5'/%3E%3Ctext x='60' y='25' fill='white' text-anchor='middle' font-family='Arial' font-size='14'%3EImage Submit%3C/text%3E%3C/svg%3E" alt="Submit Button">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Select (Dropdown) -->
+            <section class="field-section">
+                <h3>Extra: Select (Dropdown)</h3>
+                <p class="field-description">Not an input type, but a common form element for selection.</p>
+                <div class="form-group">
+                    <label for="selectInput">Select (Dropdown)</label>
+                    <select id="selectInput" name="selectInput">
+                        <option value="">Select an option</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="multiSelect">Multiple Select</label>
+                    <select id="multiSelect" name="multiSelect" multiple>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                        <option value="item4">Item 4</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Textarea -->
+            <section class="field-section">
+                <h3>Extra: Textarea</h3>
+                <p class="field-description">Not an input type, but a common form element for multi-line text.</p>
+                <div class="form-group">
+                    <label for="textareaInput">Textarea</label>
+                    <textarea id="textareaInput" name="textareaInput" rows="4" placeholder="Enter your text here..."></textarea>
+                </div>
+            </section>
+
+            <!-- Datalist -->
+            <section class="field-section">
+                <h3>Extra: Datalist (Autocomplete)</h3>
+                <p class="field-description">Provides autocomplete suggestions for an input field.</p>
+                <div class="form-group">
+                    <label for="datalistInput">Datalist Input</label>
+                    <input type="text" id="datalistInput" name="datalistInput" list="browsers" placeholder="Choose a browser">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                        <option value="Edge">
+                        <option value="Opera">
+                    </datalist>
+                </div>
+            </section>
+
+            <!-- Special Fields -->
+            <section class="field-section">
+                <h3>Extra: Special Attributes</h3>
+                <p class="field-description">Input fields with special attributes (readonly, disabled).</p>
+                <div class="form-group">
+                    <label for="readonlyInput">Readonly Input</label>
+                    <input type="text" id="readonlyInput" name="readonlyInput" value="This is readonly" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="disabledInput">Disabled Input</label>
+                    <input type="text" id="disabledInput" name="disabledInput" value="This is disabled" disabled>
+                </div>
+            </section>
+
+            <!-- Output Section -->
+            <section class="field-section">
+                <h3>Output Display</h3>
+                <div id="outputDisplay" class="output-display">
+                    Interact with any field to see the output here!
+                </div>
+            </section>
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>QA Test Page - Stephanye Castellano</p>
+        </footer>
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
